@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+
 
 namespace Lesson_5_homework
 {
@@ -10,6 +8,8 @@ namespace Lesson_5_homework
     {
         static void Main(string[] args)
         {
+            string filename = "text.txt";
+            File.WriteAllText(filename, Console.ReadLine()); // записываем в файл строку
         }
     }
 }
